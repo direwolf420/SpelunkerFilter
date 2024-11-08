@@ -1,94 +1,94 @@
 Configs: {
 	SFConfig: {
-		// DisplayName: Config
-		// DefaultFilterTooltip: Disable this to prevent the {$ItemName.SpelunkerPotion} from highlighting it
+		DisplayName: Конфигурация
+		DefaultFilterTooltip: Выключите, чтобы {$ItemName.SpelunkerPotion} не подсвечивало это.
 
 		Headers: {
-			// CustomFilter: Custom Filter
-			// PresetFilterGroupToggles: Preset Filter - Group Toggles for Vanilla Tiles
-			// PresetFilter: Preset Filter - Vanilla Tiles
+			CustomFilter: Собственный фильтр
+			PresetFilterGroupToggles: Переключатели групп предустановленных фильтров для ванильных тайлов
+			PresetFilter: Предустановленный фильтр для ванильных тайлов
 		}
 
 		ApplyToMetalDetector: {
-			// Label: Apply To Metal Detector
-			// Tooltip: If enabled, applies the same filter settings to the {$ItemName.MetalDetector}
+			Label: Применять к металлодетектору
+			Tooltip: Если включено, применяет те же настройки фильтра для {$ItemName.MetalDetector}
 		}
 
 		RemoveSparklingDust: {
-			// Label: Remove Sparkling Dust
-			// Tooltip: If enabled, removes the sparkling dust particles that appear over highlighted tiles. May improve performance
+			Label: Убрать сверкающие частицы
+			Tooltip: Если включено, убирает сверкающие частицы, которые появляются на подсвеченных тайлах. Может увеличить производительность.
 		}
 
 		CustomWhitelist: {
-			// Label: Custom Whitelist
-			// Tooltip: Tiles in this list WILL be highlighted. Takes precedence over "{$Configs.SFConfig.Headers.PresetFilter}" and "{$Configs.SFConfig.CustomBlacklist.Label}"
+			Label: Собственный белый список
+			Tooltip: Тайлы в этом списке будут подсвечены. Имеет приоритет над "{$Configs.SFConfig.Headers.PresetFilter}" и "{$Configs.SFConfig.CustomBlacklist.Label}"
 		}
 
 		CustomBlacklist: {
-			// Label: Custom Blacklist
-			// Tooltip: Tiles in this list WILL NOT be highlighted. Takes precedence over "{$Configs.SFConfig.Headers.PresetFilter}"
+			Label: Собственный чёрный список
+			Tooltip: Тайлы в этом списке НЕ БУДУТ подсвечены. Имеет приоритет над "{$Configs.SFConfig.Headers.PresetFilter}"
 		}
 
 		ToggleGems: {
-			// Label: Toggle Gems
-			// Tooltip: Toggles all gems
+			Label: Переключить драгоценные камни
+			Tooltip: Переключает все драгоценные камни
 		}
 
 		TogglePreHMMetalOres: {
-			// Label: Toggle Pre-HM Ores
-			// Tooltip: Toggles all pre-hardmode metal ores
+			Label: Переключить руды до Хардмода
+			Tooltip: Переключает все руды до Хардмода
 		}
 
 		ToggleHMMetalOres: {
-			// Label: Toggle HM Ores
-			// Tooltip: Toggles all hardmode metal ores
+			Label: Переключить руды Хардмода
+			Tooltip: Переключает все руды Хардмода
 		}
 
-		// Pots.Label: Pots
-		// DesertFossil.Label: Desert Fossil
-		// FossilOre.Label: Sturdy Fossil
-		// Copper.Label: Copper Ore
-		// Tin.Label: Tin Ore
-		// Iron.Label: Iron Ore
-		// Lead.Label: Lead Ore
-		// Silver.Label: Silver Ore
-		// Tungsten.Label: Tungsten Ore
-		// Gold.Label: Gold Ore
-		// Platinum.Label: Platinum Ore
-		// Meteorite.Label: Meteorite Ore
-		// Containers.Label: Containers
-		// FakeContainers.Label: Fake Containers
-		// Containers2.Label: Containers 2
-		// FakeContainers2.Label: Fake Containers 2
-		// Heart.Label: Life Crystal
-		// ManaCrystal.Label: Mana Crystal
-		// Cobalt.Label: Cobalt Ore
-		// Palladium.Label: Palladium Ore
-		// Mythril.Label: Mythril Ore
-		// Orichalcum.Label: Orichalcum Ore
-		// Adamantite.Label: Adamantite Ore
-		// Titanium.Label: Titanium Ore
-		// Chlorophyte.Label: Chlorophyte Ore
-		// DyePlants.Label: Dye Plants
-		// LifeFruit.Label: Life Fruit
-		// Sapphire.Label: Sapphire
-		// Ruby.Label: Ruby
-		// Emerald.Label: Emerald
-		// Topaz.Label: Topaz
-		// Amethyst.Label: Amethyst
-		// Diamond.Label: Diamond
-		// MatureHerbs.Label: Mature Herbs
-		// BloomingHerbs.Label: Blooming Herbs
-		// Statues.Label: Statues
-		// ExposedGems.Label: Exposed Gems
-		// Painting3X3.Label: Paintings (3x3)
-		// Painting6X4.Label: Paintings (6x4)
-		// Painting2X3.Label: Paintings (2x3)
-		// Painting3X2.Label: Paintings (3x2)
-		// AlphabetStatues.Label: Alphabet Statues
-		// MushroomStatue.Label: Mushroom Statue
-		// CatBast.Label: Bast Statue
-		// BoulderStatue.Label: Boulder Statue
-		// AmberStoneBlock.Label: Amber
+		Pots.Label: Горшки
+		DesertFossil.Label: Пустынные окаменелости
+		FossilOre.Label: Затвердевшая окаменелость
+		Copper.Label: Медная руда
+		Tin.Label: Оловянная руда
+		Iron.Label: Железная руда
+		Lead.Label: Свинцовая руда
+		Silver.Label: Серебряная руда
+		Tungsten.Label: Вольфрамовая руда
+		Gold.Label: Золотая руда
+		Platinum.Label: Платиновая руда
+		Meteorite.Label: Метеорит
+		Containers.Label: Хранилища
+		FakeContainers.Label: Ложные хранилища
+		Containers2.Label: Хранилища 2
+		FakeContainers2.Label: Ложные хранилища 2
+		Heart.Label: Кристаллы жизни
+		ManaCrystal.Label: Кристаллы маны
+		Cobalt.Label: Кобальтовая руда
+		Palladium.Label: Палладиевая руда
+		Mythril.Label: Мифриловая руда
+		Orichalcum.Label: Орихалковая руда
+		Adamantite.Label: Адамантитовая руда
+		Titanium.Label: Титановая руда
+		Chlorophyte.Label: Хлорофитовая руда
+		DyePlants.Label: Растения для красителей
+		LifeFruit.Label: Фрукт жизни
+		Sapphire.Label: Сапфир
+		Ruby.Label: Рубин
+		Emerald.Label: Изумруд
+		Topaz.Label: Топаз
+		Amethyst.Label: Аметист
+		Diamond.Label: Алмазы
+		MatureHerbs.Label: Зрелые травы
+		BloomingHerbs.Label: Цветущие травы
+		Statues.Label: Статуи
+		ExposedGems.Label: Открытые драгоценные камни
+		Painting3X3.Label: Картины (3x3)
+		Painting6X4.Label: Картины (6x4)
+		Painting2X3.Label: Картины (2x3)
+		Painting3X2.Label: Картины (3x2)
+		AlphabetStatues.Label: Статуя алфавита
+		MushroomStatue.Label: Статуя грибов
+		CatBast.Label: Статуя Бастет
+		BoulderStatue.Label: Статуя валуна
+		AmberStoneBlock.Label: Янтарь
 	}
 }
