@@ -21,7 +21,7 @@ Configs: {
 
 		CustomWhitelist: {
 			Label: Собственный белый список
-			Tooltip: Тайлы в этом списке будут подсвечены. Имеет приоритет над "{$Configs.SFConfig.Headers.PresetFilter}" и "{$Configs.SFConfig.CustomBlacklist.Label}"
+			Tooltip: Тайлы в этом списке БУДУТ подсвечены. Имеет приоритет над "{$Configs.SFConfig.Headers.PresetFilter}" и "{$Configs.SFConfig.CustomBlacklist.Label}"
 		}
 
 		CustomBlacklist: {
