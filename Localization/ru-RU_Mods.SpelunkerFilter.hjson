@@ -5,8 +5,8 @@ Configs: {
 
 		Headers: {
 			CustomFilter: Собственный фильтр
-			PresetFilterGroupToggles: Переключатели групп предустановленных фильтров для ванильных тайлов
-			PresetFilter: Предустановленный фильтр для ванильных тайлов
+			PresetFilterGroupToggles: Переключатели групп предустановленных фильтров для ванильных блоков
+			PresetFilter: Предустановленный фильтр для ванильных блоков
 		}
 
 		ApplyToMetalDetector: {
@@ -16,17 +16,17 @@ Configs: {
 
 		RemoveSparklingDust: {
 			Label: Убрать сверкающие частицы
-			Tooltip: Если включено, убирает сверкающие частицы, которые появляются на подсвеченных тайлах. Может увеличить производительность.
+			Tooltip: Если включено, убирает сверкающие частицы, которые появляются на подсвеченных блоках. Может увеличить производительность.
 		}
 
 		CustomWhitelist: {
 			Label: Собственный белый список
-			Tooltip: Тайлы в этом списке БУДУТ подсвечены. Имеет приоритет над "{$Configs.SFConfig.Headers.PresetFilter}" и "{$Configs.SFConfig.CustomBlacklist.Label}"
+			Tooltip: Блоки в этом списке БУДУТ подсвечены. Имеет приоритет над "{$Configs.SFConfig.Headers.PresetFilter}" и "{$Configs.SFConfig.CustomBlacklist.Label}"
 		}
 
 		CustomBlacklist: {
 			Label: Собственный чёрный список
-			Tooltip: Тайлы в этом списке НЕ БУДУТ подсвечены. Имеет приоритет над "{$Configs.SFConfig.Headers.PresetFilter}"
+			Tooltip: Блоки в этом списке НЕ БУДУТ подсвечены. Имеет приоритет над "{$Configs.SFConfig.Headers.PresetFilter}"
 		}
 
 		ToggleGems: {
