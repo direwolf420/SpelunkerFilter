@@ -1,7 +1,7 @@
 Configs: {
 	SFConfig: {
 		DisplayName: Конфигурация
-		DefaultFilterTooltip: Выключите, чтобы {$ItemName.SpelunkerPotion} не подсвечивало это.
+		DefaultFilterTooltip: Выключите, чтобы {$ItemName.SpelunkerPotion} не подсвечивало это
 
 		Headers: {
 			CustomFilter: Собственный фильтр
@@ -16,7 +16,7 @@ Configs: {
 
 		RemoveSparklingDust: {
 			Label: Убрать сверкающие частицы
-			Tooltip: Если включено, убирает сверкающие частицы, которые появляются на подсвеченных блоках. Может увеличить производительность.
+			Tooltip: Если включено, убирает сверкающие частицы, которые появляются на подсвеченных блоках. Может увеличить производительность
 		}
 
 		CustomWhitelist: {
