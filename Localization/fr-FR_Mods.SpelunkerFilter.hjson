@@ -1,94 +1,94 @@
 Configs: {
 	SFConfig: {
-		// DisplayName: Config
-		// DefaultFilterTooltip: Disable this to prevent the {$ItemName.SpelunkerPotion} from highlighting it
+		DisplayName: Configuration
+		DefaultFilterTooltip: Désactiver ceci pour empêcher la {$ItemName.SpelunkerPotion} de mettre ce bloc en surbrillance
 
 		Headers: {
-			// CustomFilter: Custom Filter
-			// PresetFilterGroupToggles: Preset Filter - Group Toggles for Vanilla Tiles
-			// PresetFilter: Preset Filter - Vanilla Tiles
+			CustomFilter: Filtre Personnalisé
+			PresetFilterGroupToggles: Filtre Préréglé - Groupe d'options pour les Blocs Vanilla
+			PresetFilter: Filtre Préréglé - Blocs Vanilla
 		}
 
 		ApplyToMetalDetector: {
-			// Label: Apply To Metal Detector
-			// Tooltip: If enabled, applies the same filter settings to the {$ItemName.MetalDetector}
+			Label: S'applique au {$ItemName.MetalDetector}
+			Tooltip: Si activé, applique le même effet au {$ItemName.MetalDetector}
 		}
 
 		RemoveSparklingDust: {
-			// Label: Remove Sparkling Dust
-			// Tooltip: If enabled, removes the sparkling dust particles that appear over highlighted tiles. May improve performance
+			Label: Retire l'effet de Scintillement
+			Tooltip: Si activé, retire les particules scintillantes qui apparaissent sur les blocs en surbrillance. Pourrait améliorer les performances.
 		}
 
 		CustomWhitelist: {
-			// Label: Custom Whitelist
-			// Tooltip: Tiles in this list WILL be highlighted. Takes precedence over "{$Configs.SFConfig.Headers.PresetFilter}" and "{$Configs.SFConfig.CustomBlacklist.Label}"
+			Label: Liste blanche Personnalisée
+			Tooltip: Les blocs dans cette liste SERONT être en surbrillance. Priorité au-dessus de "{$Configs.SFConfig.Headers.PresetFilter}" et "{$Configs.SFConfig.CustomBlacklist.Label}"
 		}
 
 		CustomBlacklist: {
-			// Label: Custom Blacklist
-			// Tooltip: Tiles in this list WILL NOT be highlighted. Takes precedence over "{$Configs.SFConfig.Headers.PresetFilter}"
+			Label: Liste noire Personnalisée
+			Tooltip: Les blocs dans cette liste ne SERONT pas en surbrillance. Priorité au-dessus de "{$Configs.SFConfig.Headers.PresetFilter}"
 		}
 
 		ToggleGems: {
-			// Label: Toggle Gems
-			// Tooltip: Toggles all gems
+			Label: Activer/Désactiver gemmes
+			Tooltip: Active/Désactive toutes les gemmes
 		}
 
 		TogglePreHMMetalOres: {
-			// Label: Toggle Pre-HM Ores
-			// Tooltip: Toggles all pre-hardmode metal ores
+			Label: Activer/Désactiver minerais Pré-Hardmode
+			Tooltip: Active/Désactive tous les minerais du Pré-Hardmode
 		}
 
 		ToggleHMMetalOres: {
-			// Label: Toggle HM Ores
-			// Tooltip: Toggles all hardmode metal ores
+			Label: Activer/Désactiver minerais Hardmode
+			Tooltip: Active/Désactive tous les minerais du Hardmode
 		}
 
-		// Pots.Label: Pots
-		// DesertFossil.Label: Desert Fossil
-		// FossilOre.Label: Sturdy Fossil
-		// Copper.Label: Copper Ore
-		// Tin.Label: Tin Ore
-		// Iron.Label: Iron Ore
-		// Lead.Label: Lead Ore
-		// Silver.Label: Silver Ore
-		// Tungsten.Label: Tungsten Ore
-		// Gold.Label: Gold Ore
-		// Platinum.Label: Platinum Ore
-		// Meteorite.Label: Meteorite Ore
-		// Containers.Label: Containers
-		// FakeContainers.Label: Fake Containers
-		// Containers2.Label: Containers 2
-		// FakeContainers2.Label: Fake Containers 2
-		// Heart.Label: Life Crystal
-		// ManaCrystal.Label: Mana Crystal
-		// Cobalt.Label: Cobalt Ore
-		// Palladium.Label: Palladium Ore
-		// Mythril.Label: Mythril Ore
-		// Orichalcum.Label: Orichalcum Ore
-		// Adamantite.Label: Adamantite Ore
-		// Titanium.Label: Titanium Ore
-		// Chlorophyte.Label: Chlorophyte Ore
-		// DyePlants.Label: Dye Plants
-		// LifeFruit.Label: Life Fruit
-		// Sapphire.Label: Sapphire
-		// Ruby.Label: Ruby
-		// Emerald.Label: Emerald
-		// Topaz.Label: Topaz
-		// Amethyst.Label: Amethyst
-		// Diamond.Label: Diamond
-		// MatureHerbs.Label: Mature Herbs
-		// BloomingHerbs.Label: Blooming Herbs
-		// Statues.Label: Statues
-		// ExposedGems.Label: Exposed Gems
-		// Painting3X3.Label: Paintings (3x3)
-		// Painting6X4.Label: Paintings (6x4)
-		// Painting2X3.Label: Paintings (2x3)
-		// Painting3X2.Label: Paintings (3x2)
-		// AlphabetStatues.Label: Alphabet Statues
-		// MushroomStatue.Label: Mushroom Statue
-		// CatBast.Label: Bast Statue
-		// BoulderStatue.Label: Boulder Statue
-		// AmberStoneBlock.Label: Amber
+		Pots.Label: Jarres
+		DesertFossil.Label: Fossile du désert
+		FossilOre.Label: Fossile solide
+		Copper.Label: Minerais de cuivre
+		Tin.Label: Minerais d'étain
+		Iron.Label: Minerais de fer
+		Lead.Label: Minerais de plomb
+		Silver.Label: Minerais d'argent
+		Tungsten.Label: Minerais Tungsten
+		Gold.Label: Minerais d'or
+		Platinum.Label: Minerais de platine
+		Meteorite.Label: Minerais de météorite
+		Containers.Label: Stockages
+		FakeContainers.Label: Stockages piégés
+		Containers2.Label: Stockages 2
+		FakeContainers2.Label: Stockages piégés 2
+		Heart.Label: Cristal de santé
+		ManaCrystal.Label: Cristal de mana
+		Cobalt.Label: Minerais de cobalt
+		Palladium.Label: Minerais de palladium
+		Mythril.Label: Minerais de mithril
+		Orichalcum.Label: Minerais d'orichalque
+		Adamantite.Label: Minerais d'adamantite
+		Titanium.Label: Minerais de titane
+		Chlorophyte.Label: Minerais de chlorophyte
+		DyePlants.Label: Plantes de teinture
+		LifeFruit.Label: Fruit de vie
+		Sapphire.Label: Saphir
+		Ruby.Label: Rubis
+		Emerald.Label: Émeraude
+		Topaz.Label: Topaze
+		Amethyst.Label: Améthyste
+		Diamond.Label: Diamant
+		MatureHerbs.Label: Herbes matures
+		BloomingHerbs.Label: Herbes fleuries
+		Statues.Label: Statues
+		ExposedGems.Label: Gemmes exposées
+		Painting3X3.Label: Peintures (3x3)
+		Painting6X4.Label: Peintures (6x4)
+		Painting2X3.Label: Peintures (2x3)
+		Painting3X2.Label: Peintures (3x2)
+		AlphabetStatues.Label: Statues de l'alphabet
+		MushroomStatue.Label: Statues de champignon
+		CatBast.Label: Statues de bastet
+		BoulderStatue.Label: Statues de rocher
+		AmberStoneBlock.Label: Ambre
 	}
 }

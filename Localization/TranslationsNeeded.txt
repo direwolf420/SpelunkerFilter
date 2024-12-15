@@ -1,7 +1,7 @@
 en-US, 65/65, 100%, missing 0
 de-DE, 0/65, 0%, missing 65
 it-IT, 0/65, 0%, missing 65
-fr-FR, 0/65, 0%, missing 65
+fr-FR, 65/65, 100%, missing 0
 es-ES, 0/65, 0%, missing 65
 ru-RU, 65/65, 100%, missing 0
 zh-Hans, 0/65, 0%, missing 65
