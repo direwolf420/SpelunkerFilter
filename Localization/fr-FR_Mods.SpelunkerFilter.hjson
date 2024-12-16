@@ -10,27 +10,27 @@ Configs: {
 		}
 
 		ApplyToMetalDetector: {
-			Label: S'applique au {$ItemName.MetalDetector}
+			Label: Appliquer au {$ItemName.MetalDetector}
 			Tooltip: Si activé, applique le même effet au {$ItemName.MetalDetector}
 		}
 
 		RemoveSparklingDust: {
 			Label: Retire l'effet de Scintillement
-			Tooltip: Si activé, retire les particules scintillantes qui apparaissent sur les blocs en surbrillance. Pourrait améliorer les performances.
+			Tooltip: Si activé, retire les particules scintillantes qui apparaissent sur les blocs en surbrillance. Peut améliorer les performances.
 		}
 
 		CustomWhitelist: {
 			Label: Liste blanche Personnalisée
-			Tooltip: Les blocs dans cette liste SERONT être en surbrillance. Priorité au-dessus de "{$Configs.SFConfig.Headers.PresetFilter}" et "{$Configs.SFConfig.CustomBlacklist.Label}"
+			Tooltip: Les blocs dans cette liste SERONT mis en surbrillance. Priorité au-dessus de "{$Configs.SFConfig.Headers.PresetFilter}" et "{$Configs.SFConfig.CustomBlacklist.Label}"
 		}
 
 		CustomBlacklist: {
 			Label: Liste noire Personnalisée
-			Tooltip: Les blocs dans cette liste ne SERONT pas en surbrillance. Priorité au-dessus de "{$Configs.SFConfig.Headers.PresetFilter}"
+			Tooltip: Les blocs dans cette liste ne SERONT pas en surbrillance. Priorité sur "{$Configs.SFConfig.Headers.PresetFilter}"
 		}
 
 		ToggleGems: {
-			Label: Activer/Désactiver gemmes
+			Label: Activer/Désactiver les gemmes
 			Tooltip: Active/Désactive toutes les gemmes
 		}
 
@@ -52,7 +52,7 @@ Configs: {
 		Iron.Label: Minerais de fer
 		Lead.Label: Minerais de plomb
 		Silver.Label: Minerais d'argent
-		Tungsten.Label: Minerais Tungsten
+		Tungsten.Label: Minerais tungstène
 		Gold.Label: Minerais d'or
 		Platinum.Label: Minerais de platine
 		Meteorite.Label: Minerais de météorite
@@ -81,10 +81,10 @@ Configs: {
 		BloomingHerbs.Label: Herbes fleuries
 		Statues.Label: Statues
 		ExposedGems.Label: Gemmes exposées
-		Painting3X3.Label: Peintures (3x3)
-		Painting6X4.Label: Peintures (6x4)
-		Painting2X3.Label: Peintures (2x3)
-		Painting3X2.Label: Peintures (3x2)
+		Painting3X3.Label: Peinture (3x3)
+		Painting6X4.Label: Peinture (6x4)
+		Painting2X3.Label: Peinture (2x3)
+		Painting3X2.Label: Peinture (3x2)
 		AlphabetStatues.Label: Statues de l'alphabet
 		MushroomStatue.Label: Statues de champignon
 		CatBast.Label: Statues de bastet
