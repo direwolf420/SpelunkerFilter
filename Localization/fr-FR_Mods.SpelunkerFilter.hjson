@@ -47,15 +47,15 @@ Configs: {
 		Pots.Label: Jarres
 		DesertFossil.Label: Fossile du désert
 		FossilOre.Label: Fossile solide
-		Copper.Label: Minerais de cuivre
-		Tin.Label: Minerais d'étain
-		Iron.Label: Minerais de fer
-		Lead.Label: Minerais de plomb
-		Silver.Label: Minerais d'argent
-		Tungsten.Label: Minerais tungstène
-		Gold.Label: Minerais d'or
-		Platinum.Label: Minerais de platine
-		Meteorite.Label: Minerais de météorite
+		Copper.Label: Minerai de cuivre
+		Tin.Label: Minerai d'étain
+		Iron.Label: Minerai de fer
+		Lead.Label: Minerai de plomb
+		Silver.Label: Minerai d'argent
+		Tungsten.Label: Minerai tungstène
+		Gold.Label: Minerai d'or
+		Platinum.Label: Minerai de platine
+		Meteorite.Label: Minerai de météorite
 		Containers.Label: Stockages
 		FakeContainers.Label: Stockages piégés
 		Containers2.Label: Stockages 2
@@ -63,12 +63,12 @@ Configs: {
 		Heart.Label: Cristal de santé
 		ManaCrystal.Label: Cristal de mana
 		Cobalt.Label: Minerais de cobalt
-		Palladium.Label: Minerais de palladium
-		Mythril.Label: Minerais de mithril
-		Orichalcum.Label: Minerais d'orichalque
-		Adamantite.Label: Minerais d'adamantite
-		Titanium.Label: Minerais de titane
-		Chlorophyte.Label: Minerais de chlorophyte
+		Palladium.Label: Minerai de palladium
+		Mythril.Label: Minerai de mithril
+		Orichalcum.Label: Minerai d'orichalque
+		Adamantite.Label: Minerai d'adamantite
+		Titanium.Label: Minerai de titane
+		Chlorophyte.Label: Minerai de chlorophyte
 		DyePlants.Label: Plantes de teinture
 		LifeFruit.Label: Fruit de vie
 		Sapphire.Label: Saphir
@@ -81,14 +81,14 @@ Configs: {
 		BloomingHerbs.Label: Herbes fleuries
 		Statues.Label: Statues
 		ExposedGems.Label: Gemmes exposées
-		Painting3X3.Label: Peinture (3x3)
-		Painting6X4.Label: Peinture (6x4)
-		Painting2X3.Label: Peinture (2x3)
-		Painting3X2.Label: Peinture (3x2)
+		Painting3X3.Label: Peintures (3x3)
+		Painting6X4.Label: Peintures (6x4)
+		Painting2X3.Label: Peintures (2x3)
+		Painting3X2.Label: Peintures (3x2)
 		AlphabetStatues.Label: Statues de l'alphabet
-		MushroomStatue.Label: Statues de champignon
-		CatBast.Label: Statues de bastet
-		BoulderStatue.Label: Statues de rocher
+		MushroomStatue.Label: Statue de champignon
+		CatBast.Label: Statue de Bastet
+		BoulderStatue.Label: Statue de rocher
 		AmberStoneBlock.Label: Ambre
 	}
 }
