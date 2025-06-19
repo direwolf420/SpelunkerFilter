@@ -20,3 +20,4 @@ If you want to add support for different languages, you are welcome to contribut
 List of localization contributors:
 * Russian: jupiter.ryo
 * French: TheBrutalSkull
+* German: Lighty

@@ -21,3 +21,4 @@ If you want to add support for different languages, you are welcome to contribut
 List of localization contributors:
 * Russian: [b]jupiter.ryo[/b]
 * French: [b]TheBrutalSkull[/b]
+* German: [b]Lighty[/b]

@@ -1,5 +1,5 @@
 en-US, 65/65, 100%, missing 0
-de-DE, 0/65, 0%, missing 65
+de-DE, 65/65, 100%, missing 0
 it-IT, 0/65, 0%, missing 65
 fr-FR, 65/65, 100%, missing 0
 es-ES, 0/65, 0%, missing 65

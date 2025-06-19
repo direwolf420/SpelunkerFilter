@@ -10,13 +10,13 @@ Configs: {
 		}
 
 		ApplyToMetalDetector: {
-			Label: Auf Metalldetektor anwenden
+			Label: Auf {$ItemName.MetalDetector} anwenden
 			Tooltip: Falls aktiviert, werden dieselben Filtereinstellungen auf den {$ItemName.MetalDetector} angewendet
 		}
 
 		RemoveSparklingDust: {
 			Label: Funkelnden Staub entfernen
-			Tooltip: Falls aktiviert, entfernt dies die funkelnden Staubpartikel, die über hervorgehobenen Blöcken erscheinen. Kann die Leistung verbessern
+			Tooltip: Falls aktiviert, entfernt dies die funkelnden Staubpartikel, die über hervorgehobenen Blöcken erscheinen. Kann die Performance verbessern
 		}
 
 		CustomWhitelist: {
@@ -36,59 +36,59 @@ Configs: {
 
 		TogglePreHMMetalOres: {
 			Label: Vor-Hardmode-Erze umschalten
-			Tooltip: Schaltet alle Metall-Erze des Vor-Hardmodes um
+			Tooltip: Schaltet alle Metall-Erze des Pre-Hardmodes um
 		}
 
 		ToggleHMMetalOres: {
 			Label: Hardmode-Erze umschalten
 			Tooltip: Schaltet alle Metall-Erze des Hardmodes um
 		}
-	Pots.label: Töpfe
-	DesertFossil.label: Wüstenfossil
-	FossilOre.label: Robustes Fossil
-	Copper.label: Kupfererz
-	Tin.label: Zinnerz
-	Iron.label: Eisenerz
-	Lead.label: Bleierz
-	Silver.label: Silbererz
-	Tungsten.label: Wolframerz
-	Gold.label: Golderz
-	Platinum.label: Platinerz
-	Meteorite.label: Meteoriterz
-	Containers.label: Behälter
-	FakeContainers.label: Falsche Behälter
-	Containers2.label: Behälter 2
-	FakeContainers2.label: Falsche Behälter 2
-	Heart.label: Lebensherz
-	ManaCrystal.label: Manakristall
-	Cobalt.label: Kobalterz
-	Palladium.label: Palladiumerz
-	Mythril.label: Mithrilerz
-	Orichalcum.label: Orichalcumerz
-	Adamantite.label: Adamantiterz
-	Titanium.label: Titanerz
-	Chlorophyte.label: Chlorophyterz
-	DyePlants.label: Farbpflanzen
-	LifeFruit.label: Lebensfrucht
-	Sapphire.label: Saphir
-	Ruby.label: Rubin
-	Emerald.label: Smaragd
-	Topaz.label: Topas
-	Amethyst.label: Amethyst
-	Diamond.label: Diamant
-	MatureHerbs.label: Reife Kräuter
-	BloomingHerbs.label: Blühende Kräuter
-	Statues.label: Statuen
-	ExposedGems.label: Freiliegende Edelsteine
-	Painting3X3.label: Gemälde (3x3)
-	Painting6X4.label: Gemälde (6x4)
-	Painting2X3.label: Gemälde (2x3)
-	Painting3X2.label: Gemälde (3x2)
-	AlphabetStatues.label: Buchstabenstatuen
-	MushroomStatue.label: Pilzstatue
-	CatBast.label: Bast-Statue
-	BoulderStatue.label: Felsbrockenstatue
-	AmberStoneBlock.label: Bernstein
 
+		Pots.Label: Töpfe
+		DesertFossil.Label: Wüstenfossil
+		FossilOre.Label: Robustes Fossil
+		Copper.Label: Kupfererz
+		Tin.Label: Zinnerz
+		Iron.Label: Eisenerz
+		Lead.Label: Bleierz
+		Silver.Label: Silbererz
+		Tungsten.Label: Wolframerz
+		Gold.Label: Golderz
+		Platinum.Label: Platinerz
+		Meteorite.Label: Meteoriterz
+		Containers.Label: Behälter
+		FakeContainers.Label: Falsche Behälter
+		Containers2.Label: Behälter 2
+		FakeContainers2.Label: Falsche Behälter 2
+		Heart.Label: Lebensherz
+		ManaCrystal.Label: Manakristall
+		Cobalt.Label: Kobalterz
+		Palladium.Label: Palladiumerz
+		Mythril.Label: Mithrilerz
+		Orichalcum.Label: Orichalcumerz
+		Adamantite.Label: Adamantiterz
+		Titanium.Label: Titanerz
+		Chlorophyte.Label: Chlorophyterz
+		DyePlants.Label: Farbpflanzen
+		LifeFruit.Label: Lebensfrucht
+		Sapphire.Label: Saphir
+		Ruby.Label: Rubin
+		Emerald.Label: Smaragd
+		Topaz.Label: Topas
+		Amethyst.Label: Amethyst
+		Diamond.Label: Diamant
+		MatureHerbs.Label: Reife Kräuter
+		BloomingHerbs.Label: Blühende Kräuter
+		Statues.Label: Statuen
+		ExposedGems.Label: Freiliegende Edelsteine
+		Painting3X3.Label: Gemälde (3x3)
+		Painting6X4.Label: Gemälde (6x4)
+		Painting2X3.Label: Gemälde (2x3)
+		Painting3X2.Label: Gemälde (3x2)
+		AlphabetStatues.Label: Buchstabenstatuen
+		MushroomStatue.Label: Pilzstatue
+		CatBast.Label: Bast-Statue
+		BoulderStatue.Label: Felsbrockenstatue
+		AmberStoneBlock.Label: Bernstein
 	}
 }

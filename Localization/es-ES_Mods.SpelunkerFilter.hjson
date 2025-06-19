@@ -10,7 +10,7 @@ Configs: {
 		}
 
 		ApplyToMetalDetector: {
-			// Label: Apply To Metal Detector
+			// Label: Apply To {$ItemName.MetalDetector}
 			// Tooltip: If enabled, applies the same filter settings to the {$ItemName.MetalDetector}
 		}
 
