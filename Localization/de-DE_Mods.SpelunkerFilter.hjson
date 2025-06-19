@@ -1,94 +1,94 @@
 Configs: {
 	SFConfig: {
-		// DisplayName: Config
-		// DefaultFilterTooltip: Disable this to prevent the {$ItemName.SpelunkerPotion} from highlighting it
+		DisplayName: Konfiguration
+		DefaultFilterTooltip: Deaktiviere dies, um zu verhindern, dass der {$ItemName.SpelunkerPotion} es hervorhebt
 
 		Headers: {
-			// CustomFilter: Custom Filter
-			// PresetFilterGroupToggles: Preset Filter - Group Toggles for Vanilla Tiles
-			// PresetFilter: Preset Filter - Vanilla Tiles
+			CustomFilter: Benutzerdefinierter Filter
+			PresetFilterGroupToggles: Voreingestellter Filter – Gruppenumschalter für Vanilla-Blöcke
+			PresetFilter: Voreingestellter Filter – Vanilla-Blöcke
 		}
 
 		ApplyToMetalDetector: {
-			// Label: Apply To Metal Detector
-			// Tooltip: If enabled, applies the same filter settings to the {$ItemName.MetalDetector}
+			Label: Auf Metalldetektor anwenden
+			Tooltip: Falls aktiviert, werden dieselben Filtereinstellungen auf den {$ItemName.MetalDetector} angewendet
 		}
 
 		RemoveSparklingDust: {
-			// Label: Remove Sparkling Dust
-			// Tooltip: If enabled, removes the sparkling dust particles that appear over highlighted tiles. May improve performance
+			Label: Funkelnden Staub entfernen
+			Tooltip: Falls aktiviert, entfernt dies die funkelnden Staubpartikel, die über hervorgehobenen Blöcken erscheinen. Kann die Leistung verbessern
 		}
 
 		CustomWhitelist: {
-			// Label: Custom Whitelist
-			// Tooltip: Tiles in this list WILL be highlighted. Takes precedence over "{$Configs.SFConfig.Headers.PresetFilter}" and "{$Configs.SFConfig.CustomBlacklist.Label}"
+			Label: Benutzerdefinierte Whitelist
+			Tooltip: Blöcke in dieser Liste WERDEN hervorgehoben. Hat Vorrang vor "{$Configs.SFConfig.Headers.PresetFilter}" und "{$Configs.SFConfig.CustomBlacklist.Label}"
 		}
 
 		CustomBlacklist: {
-			// Label: Custom Blacklist
-			// Tooltip: Tiles in this list WILL NOT be highlighted. Takes precedence over "{$Configs.SFConfig.Headers.PresetFilter}"
+			Label: Benutzerdefinierte Blacklist
+			Tooltip: Blöcke in dieser Liste WERDEN NICHT hervorgehoben. Hat Vorrang vor "{$Configs.SFConfig.Headers.PresetFilter}"
 		}
 
 		ToggleGems: {
-			// Label: Toggle Gems
-			// Tooltip: Toggles all gems
+			Label: Edelsteine umschalten
+			Tooltip: Schaltet alle Edelsteine um
 		}
 
 		TogglePreHMMetalOres: {
-			// Label: Toggle Pre-HM Ores
-			// Tooltip: Toggles all pre-hardmode metal ores
+			Label: Vor-Hardmode-Erze umschalten
+			Tooltip: Schaltet alle Metall-Erze des Vor-Hardmodes um
 		}
 
 		ToggleHMMetalOres: {
-			// Label: Toggle HM Ores
-			// Tooltip: Toggles all hardmode metal ores
+			Label: Hardmode-Erze umschalten
+			Tooltip: Schaltet alle Metall-Erze des Hardmodes um
 		}
+	Pots.label: Töpfe
+	DesertFossil.label: Wüstenfossil
+	FossilOre.label: Robustes Fossil
+	Copper.label: Kupfererz
+	Tin.label: Zinnerz
+	Iron.label: Eisenerz
+	Lead.label: Bleierz
+	Silver.label: Silbererz
+	Tungsten.label: Wolframerz
+	Gold.label: Golderz
+	Platinum.label: Platinerz
+	Meteorite.label: Meteoriterz
+	Containers.label: Behälter
+	FakeContainers.label: Falsche Behälter
+	Containers2.label: Behälter 2
+	FakeContainers2.label: Falsche Behälter 2
+	Heart.label: Lebensherz
+	ManaCrystal.label: Manakristall
+	Cobalt.label: Kobalterz
+	Palladium.label: Palladiumerz
+	Mythril.label: Mithrilerz
+	Orichalcum.label: Orichalcumerz
+	Adamantite.label: Adamantiterz
+	Titanium.label: Titanerz
+	Chlorophyte.label: Chlorophyterz
+	DyePlants.label: Farbpflanzen
+	LifeFruit.label: Lebensfrucht
+	Sapphire.label: Saphir
+	Ruby.label: Rubin
+	Emerald.label: Smaragd
+	Topaz.label: Topas
+	Amethyst.label: Amethyst
+	Diamond.label: Diamant
+	MatureHerbs.label: Reife Kräuter
+	BloomingHerbs.label: Blühende Kräuter
+	Statues.label: Statuen
+	ExposedGems.label: Freiliegende Edelsteine
+	Painting3X3.label: Gemälde (3x3)
+	Painting6X4.label: Gemälde (6x4)
+	Painting2X3.label: Gemälde (2x3)
+	Painting3X2.label: Gemälde (3x2)
+	AlphabetStatues.label: Buchstabenstatuen
+	MushroomStatue.label: Pilzstatue
+	CatBast.label: Bast-Statue
+	BoulderStatue.label: Felsbrockenstatue
+	AmberStoneBlock.label: Bernstein
 
-		// Pots.Label: Pots
-		// DesertFossil.Label: Desert Fossil
-		// FossilOre.Label: Sturdy Fossil
-		// Copper.Label: Copper Ore
-		// Tin.Label: Tin Ore
-		// Iron.Label: Iron Ore
-		// Lead.Label: Lead Ore
-		// Silver.Label: Silver Ore
-		// Tungsten.Label: Tungsten Ore
-		// Gold.Label: Gold Ore
-		// Platinum.Label: Platinum Ore
-		// Meteorite.Label: Meteorite Ore
-		// Containers.Label: Containers
-		// FakeContainers.Label: Fake Containers
-		// Containers2.Label: Containers 2
-		// FakeContainers2.Label: Fake Containers 2
-		// Heart.Label: Life Crystal
-		// ManaCrystal.Label: Mana Crystal
-		// Cobalt.Label: Cobalt Ore
-		// Palladium.Label: Palladium Ore
-		// Mythril.Label: Mythril Ore
-		// Orichalcum.Label: Orichalcum Ore
-		// Adamantite.Label: Adamantite Ore
-		// Titanium.Label: Titanium Ore
-		// Chlorophyte.Label: Chlorophyte Ore
-		// DyePlants.Label: Dye Plants
-		// LifeFruit.Label: Life Fruit
-		// Sapphire.Label: Sapphire
-		// Ruby.Label: Ruby
-		// Emerald.Label: Emerald
-		// Topaz.Label: Topaz
-		// Amethyst.Label: Amethyst
-		// Diamond.Label: Diamond
-		// MatureHerbs.Label: Mature Herbs
-		// BloomingHerbs.Label: Blooming Herbs
-		// Statues.Label: Statues
-		// ExposedGems.Label: Exposed Gems
-		// Painting3X3.Label: Paintings (3x3)
-		// Painting6X4.Label: Paintings (6x4)
-		// Painting2X3.Label: Paintings (2x3)
-		// Painting3X2.Label: Paintings (3x2)
-		// AlphabetStatues.Label: Alphabet Statues
-		// MushroomStatue.Label: Mushroom Statue
-		// CatBast.Label: Bast Statue
-		// BoulderStatue.Label: Boulder Statue
-		// AmberStoneBlock.Label: Amber
 	}
 }
