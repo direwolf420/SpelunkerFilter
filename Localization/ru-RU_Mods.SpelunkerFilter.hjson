@@ -2,13 +2,13 @@ Configs: {
 	SFConfig: {
 		DisplayName: Конфигурация
 		DefaultFilterTooltip: Выключите, чтобы {$ItemName.SpelunkerPotion} не подсвечивало это
-		// SpecialFilterTooltip: Select an option to change how {$ItemName.SpelunkerPotion} will affect it
+		SpecialFilterTooltip: Выберите, как {$ItemName.SpelunkerPotion} будет на это влиять
 
 		Headers: {
 			CustomFilter: Собственный фильтр
 			PresetFilterGroupToggles: Переключатели групп предустановленных фильтров для ванильных блоков
 			PresetFilter: Предустановленный фильтр для ванильных блоков
-			// SpecialFilter: Special Filter
+			SpecialFilter: Особый фильтр
 		}
 
 		ApplyToMetalDetector: {
@@ -92,29 +92,25 @@ Configs: {
 		CatBast.Label: Статуя Бастет
 		BoulderStatue.Label: Статуя валуна
 		AmberStoneBlock.Label: Янтарь
-
-		GelatinCrystal: {
-			// Label: Gelatin Crystal
-			// Tooltip: ""
-		}
+		GelatinCrystal.Label: Кристалл желатина
 	}
 
 	ToggleOverride: {
-		// Tooltip: ""
+		Tooltip: ""
 
 		Default: {
-			// Label: Default
-			// Tooltip: ""
+			Label: Стандарт
+			Tooltip: ""
 		}
 
 		Whitelist: {
-			// Label: Whitelist
-			// Tooltip: ""
+			Label: Допуск
+			Tooltip: ""
 		}
 
 		Blacklist: {
-			// Label: Blacklist
-			// Tooltip: ""
+			Label: Запрет
+			Tooltip: ""
 		}
 	}
 }

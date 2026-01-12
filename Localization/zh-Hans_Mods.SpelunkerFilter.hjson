@@ -92,11 +92,7 @@ Configs: {
 		// CatBast.Label: Bast Statue
 		// BoulderStatue.Label: Boulder Statue
 		// AmberStoneBlock.Label: Amber
-
-		GelatinCrystal: {
-			// Label: Gelatin Crystal
-			// Tooltip: ""
-		}
+		// GelatinCrystal.Label: Gelatin Crystal
 	}
 
 	ToggleOverride: {
