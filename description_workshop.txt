@@ -1,4 +1,4 @@
-Spelunker Filter - Manually configure which tiles do or don't get highlighted by the Spelunker Potion
+Spelunker & Metal Detector Filter - Manually configure which tiles do or don't get highlighted by the Spelunker Potion and Metal Detector
 
 [i]Did you ever want to stop copper ore from being highlighted? Did you ever want dirt to be highlighted?
 You can't find the marble and granite biomes?

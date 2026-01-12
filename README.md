@@ -1,10 +1,10 @@
-# Spelunker Filter
+# Spelunker & Metal Detector Filter
 
 ![Icon](https://raw.githubusercontent.com/direwolf420/SpelunkerFilter/main/icon.png)
 
 Steam Workshop Link: https://steamcommunity.com/sharedfiles/filedetails/?id=3327205692
 
-Spelunker Filter - Manually configure which tiles do or don't get highlighted by the Spelunker Potion
+Spelunker Filter - Manually configure which tiles do or don't get highlighted by the Spelunker Potion and Metal Detector
 
 *Did you ever want to stop copper ore from being highlighted? Did you ever want dirt to be highlighted?
 You can't find the marble and granite biomes?
