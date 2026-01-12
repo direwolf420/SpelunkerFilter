@@ -12,14 +12,20 @@ namespace SpelunkerFilter
 	public class SpelunkerFilter : Mod
 	{
         public const string presetFilterTooltipKey = $"Mods.{nameof(SpelunkerFilter)}.Configs.{nameof(SFConfig)}.DefaultFilterTooltip";
+		public const string specialFilterTooltipKey = $"Mods.{nameof(SpelunkerFilter)}.Configs.{nameof(SFConfig)}.SpecialFilterTooltip";
 
         public static Dictionary<int, Func<bool>> tileToDefaultFilterToggle;
+
+		public static Dictionary<int, Func<Tile, bool?>> specialFilters;
 
 		private static bool drawTileRunning;
 
         public override void Load()
         {
             Language.GetOrRegister(presetFilterTooltipKey);
+			Language.GetOrRegister(specialFilterTooltipKey);
+
+			specialFilters = new();
 
 			if (SFConfig.Instance.RemoveSparklingDust)
 			{
@@ -59,6 +65,23 @@ namespace SpelunkerFilter
 		public override void PostSetupContent()
         {
             //GenerateLogOutput();
+
+			specialFilters.Add(TileID.Crystals, t =>
+				{
+					//Vanilla check:
+					//if (t.type == 129 && t.frameX < 324)
+						//return false;
+					//Our check: more robust based on spritesheet
+					//6 wide 8 tall
+					bool gelatin = t.TileFrameX is >= 18 * 18 and < 24 * 18 &&
+						t.TileFrameY is >= 0 and < 8 * 18;
+
+					if (!gelatin) return null;
+
+					//Check config toggle last, as it should only apply if the gelatin crystal is found
+					return GetToggleValue(SFConfig.Instance.GelatinCrystal);
+				}
+			);
 
             tileToDefaultFilterToggle = new()
             {
@@ -111,6 +134,17 @@ namespace SpelunkerFilter
                 { TileID.AmberStoneBlock, () => SFConfig.Instance.AmberStoneBlock },
             };
         }
+
+		public static bool? GetToggleValue(ToggleOverride value)
+		{
+			return value switch
+			{
+				ToggleOverride.Default => null,
+				ToggleOverride.Whitelist => true,
+				ToggleOverride.Blacklist => false,
+				_ => throw new ArgumentOutOfRangeException(nameof(value), value, null)
+			};
+		}
 
         //Ghetto Source Generator
         private void GenerateLogOutput()

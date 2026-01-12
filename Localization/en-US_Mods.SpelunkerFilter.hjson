@@ -2,11 +2,13 @@ Configs: {
 	SFConfig: {
 		DisplayName: Config
 		DefaultFilterTooltip: Disable this to prevent the {$ItemName.SpelunkerPotion} from highlighting it
+		SpecialFilterTooltip: Select an option to change how {$ItemName.SpelunkerPotion} will affect it
 
 		Headers: {
 			CustomFilter: Custom Filter
 			PresetFilterGroupToggles: Preset Filter - Group Toggles for Vanilla Tiles
 			PresetFilter: Preset Filter - Vanilla Tiles
+			SpecialFilter: Special Filter
 		}
 
 		ApplyToMetalDetector: {
@@ -90,5 +92,29 @@ Configs: {
 		CatBast.Label: Bast Statue
 		BoulderStatue.Label: Boulder Statue
 		AmberStoneBlock.Label: Amber
+
+		GelatinCrystal: {
+			Label: Gelatin Crystal
+			Tooltip: ""
+		}
+	}
+
+	ToggleOverride: {
+		Tooltip: ""
+
+		Default: {
+			Label: Default
+			Tooltip: ""
+		}
+
+		Whitelist: {
+			Label: Whitelist
+			Tooltip: ""
+		}
+
+		Blacklist: {
+			Label: Blacklist
+			Tooltip: ""
+		}
 	}
 }

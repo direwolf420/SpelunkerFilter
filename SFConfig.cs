@@ -1,12 +1,21 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Runtime.Serialization;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Config;
 
 namespace SpelunkerFilter
 {
-	public partial class SFConfig : ModConfig
+	public enum ToggleOverride : byte
+	{
+		Default,
+		Whitelist,
+		Blacklist
+	}
+
+	public partial class SFConfig
 	{
 		public override ConfigScope Mode => ConfigScope.ClientSide;
 
@@ -25,6 +34,11 @@ namespace SpelunkerFilter
 
 		[BackgroundColor(30, 30, 30)]
 		public List<TileDefinition> CustomBlacklist { get; set; } = new List<TileDefinition>();
+
+		[Header("SpecialFilter")]
+		[DefaultValue(ToggleOverride.Default)]
+		[TooltipKey("$" + SpelunkerFilter.specialFilterTooltipKey)]
+		public ToggleOverride GelatinCrystal { get; set; }
 
 		[Header("PresetFilterGroupToggles")]
 		[BackgroundColor(30, 30, 200)]
@@ -83,6 +97,22 @@ namespace SpelunkerFilter
 				Adamantite = value;
 				Titanium = value;
 			}
+		}
+
+		[OnDeserialized]
+		internal void OnDeserializedMethod(StreamingContext context)
+		{
+			//Correct invalid values to default fallback
+			GelatinCrystal = EnumFallback(GelatinCrystal, ToggleOverride.Default);
+		}
+
+		private static T EnumFallback<T>(T value, T defaultValue) where T : Enum
+		{
+			if (!Enum.IsDefined(typeof(T), value))
+			{
+				return defaultValue;
+			}
+			return value;
 		}
 	}
 }

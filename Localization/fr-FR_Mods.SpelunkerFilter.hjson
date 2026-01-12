@@ -2,11 +2,13 @@ Configs: {
 	SFConfig: {
 		DisplayName: Configuration
 		DefaultFilterTooltip: Désactiver ceci pour empêcher la {$ItemName.SpelunkerPotion} de mettre ce bloc en surbrillance
+		// SpecialFilterTooltip: Select an option to change how {$ItemName.SpelunkerPotion} will affect it
 
 		Headers: {
 			CustomFilter: Filtre Personnalisé
 			PresetFilterGroupToggles: Filtre Préréglé - Groupe d'options pour les Blocs Vanilla
 			PresetFilter: Filtre Préréglé - Blocs Vanilla
+			// SpecialFilter: Special Filter
 		}
 
 		ApplyToMetalDetector: {
@@ -90,5 +92,29 @@ Configs: {
 		CatBast.Label: Statue de Bastet
 		BoulderStatue.Label: Statue de rocher
 		AmberStoneBlock.Label: Ambre
+
+		GelatinCrystal: {
+			// Label: Gelatin Crystal
+			// Tooltip: ""
+		}
+	}
+
+	ToggleOverride: {
+		// Tooltip: ""
+
+		Default: {
+			// Label: Default
+			// Tooltip: ""
+		}
+
+		Whitelist: {
+			// Label: Whitelist
+			// Tooltip: ""
+		}
+
+		Blacklist: {
+			// Label: Blacklist
+			// Tooltip: ""
+		}
 	}
 }

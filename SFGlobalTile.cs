@@ -15,7 +15,7 @@ namespace SpelunkerFilter
 		{
 			bool ret = orig(t);
 
-			if (!SFConfig.Instance.ApplyToMetalDetector || (NotFiltered(t.TileType) ?? true))
+			if (!SFConfig.Instance.ApplyToMetalDetector || (NotFiltered(t, t.TileType) ?? true))
 			{
 				return ret;
 			}
@@ -25,12 +25,18 @@ namespace SpelunkerFilter
 
 		public override bool? IsTileSpelunkable(int i, int j, int type)
 		{
-			return NotFiltered(type);
+			return NotFiltered(Main.tile[i, j], type);
 		}
 
-		private static bool? NotFiltered(int type)
+		private static bool? NotFiltered(Tile t, int type)
 		{
 			var def = new TileDefinition(type);
+
+			if (SpelunkerFilter.specialFilters.TryGetValue(type, out var filter))
+			{
+				return filter(t);
+			}
+
 			if (SFConfig.Instance.CustomWhitelist.Contains(def))
 			{
 				return true;
