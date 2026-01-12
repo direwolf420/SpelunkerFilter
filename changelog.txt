@@ -1,3 +1,5 @@
 v{ModVersion} has been published to {tMLBuildPurpose} tML v{tMLVersion}
 
-* Added german localization, thanks Lighty!
+* Renamed the mod from "Spelunker Filter" to "Spelunker & Metal Detector Filter" and updated icons
+* Added small mod icon for the configuration menu
+* Added Gelatin Crystal filter
