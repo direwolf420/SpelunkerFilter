@@ -20,5 +20,5 @@ Credit to Harblesnargits for icon.
 If you want to add support for different languages, you are welcome to contribute localizations here: [b][url=https://github.com/direwolf420/SpelunkerFilter]GitHub[/url][/b]
 List of localization contributors:
 * Russian: [b]jupiter.ryo[/b]
-* French: [b]TheBrutalSkull[/b]
+* French: [b]Brutaliaa[/b]
 * German: [b]Lighty[/b]
