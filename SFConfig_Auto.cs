@@ -4,7 +4,7 @@ using Terraria.ModLoader.Config;
 namespace SpelunkerFilter
 {
 	//Pasted in manually from log output
-	public partial class SFConfig : ModConfig
+	public abstract partial class SFConfigBase : ModConfig
 	{
 		[Header("PresetFilter")]
 		[DefaultValue(true)]

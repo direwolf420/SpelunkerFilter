@@ -1,6 +1,7 @@
 Configs: {
-	SFConfig: {
-		DisplayName: Konfiguration
+	SFConfig.DisplayName: Konfiguration
+
+	SFConfigBase: {
 		DefaultFilterTooltip: Deaktiviere dies, um zu verhindern, dass der {$ItemName.SpelunkerPotion} es hervorhebt
 		SpecialFilterTooltip: Wähle eine Option aus um zu Ändern wie {$ItemName.SpelunkerPotion} es hervorhebt
 

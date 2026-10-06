@@ -11,12 +11,12 @@ namespace SpelunkerFilter
 {
 	public class SpelunkerFilter : Mod
 	{
-        public const string presetFilterTooltipKey = $"Mods.{nameof(SpelunkerFilter)}.Configs.{nameof(SFConfig)}.DefaultFilterTooltip";
-		public const string specialFilterTooltipKey = $"Mods.{nameof(SpelunkerFilter)}.Configs.{nameof(SFConfig)}.SpecialFilterTooltip";
+        public const string presetFilterTooltipKey = $"Mods.{nameof(SpelunkerFilter)}.Configs.{nameof(SFConfigBase)}.DefaultFilterTooltip";
+		public const string specialFilterTooltipKey = $"Mods.{nameof(SpelunkerFilter)}.Configs.{nameof(SFConfigBase)}.SpecialFilterTooltip";
 
-        public static Dictionary<int, Func<bool>> tileToDefaultFilterToggle;
+        public static Dictionary<int, Func<SFConfigBase, bool>> tileToDefaultFilterToggle;
 
-		public static Dictionary<int, Func<Tile, bool?>> specialFilters;
+		public static Dictionary<int, Func<SFConfigBase, Tile, bool?>> specialFilters;
 
 		private static bool drawTileRunning;
 
@@ -66,7 +66,7 @@ namespace SpelunkerFilter
         {
             //GenerateLogOutput();
 
-			specialFilters.Add(TileID.Crystals, t =>
+			specialFilters.Add(TileID.Crystals, (config, t) =>
 				{
 					//Vanilla check:
 					//if (t.type == 129 && t.frameX < 324)
@@ -79,59 +79,59 @@ namespace SpelunkerFilter
 					if (!gelatin) return null;
 
 					//Check config toggle last, as it should only apply if the gelatin crystal is found
-					return GetToggleValue(SFConfig.Instance.GelatinCrystal);
+					return GetToggleValue(config.GelatinCrystal);
 				}
 			);
 
             tileToDefaultFilterToggle = new()
             {
                 //paste result of dictDefinition here
-                { TileID.Pots, () => SFConfig.Instance.Pots },
-                { TileID.DesertFossil, () => SFConfig.Instance.DesertFossil },
-                { TileID.FossilOre, () => SFConfig.Instance.FossilOre },
-                { TileID.Copper, () => SFConfig.Instance.Copper },
-                { TileID.Tin, () => SFConfig.Instance.Tin },
-                { TileID.Iron, () => SFConfig.Instance.Iron },
-                { TileID.Lead, () => SFConfig.Instance.Lead },
-                { TileID.Silver, () => SFConfig.Instance.Silver },
-                { TileID.Tungsten, () => SFConfig.Instance.Tungsten },
-                { TileID.Gold, () => SFConfig.Instance.Gold },
-                { TileID.Platinum, () => SFConfig.Instance.Platinum },
-                { TileID.Meteorite, () => SFConfig.Instance.Meteorite },
-                { TileID.Containers, () => SFConfig.Instance.Containers },
-                { TileID.FakeContainers, () => SFConfig.Instance.FakeContainers },
-                { TileID.Containers2, () => SFConfig.Instance.Containers2 },
-                { TileID.FakeContainers2, () => SFConfig.Instance.FakeContainers2 },
-                { TileID.Heart, () => SFConfig.Instance.Heart },
-                { TileID.ManaCrystal, () => SFConfig.Instance.ManaCrystal },
-                { TileID.Cobalt, () => SFConfig.Instance.Cobalt },
-                { TileID.Palladium, () => SFConfig.Instance.Palladium },
-                { TileID.Mythril, () => SFConfig.Instance.Mythril },
-                { TileID.Orichalcum, () => SFConfig.Instance.Orichalcum },
-                { TileID.Adamantite, () => SFConfig.Instance.Adamantite },
-                { TileID.Titanium, () => SFConfig.Instance.Titanium },
-                { TileID.Chlorophyte, () => SFConfig.Instance.Chlorophyte },
-                { TileID.DyePlants, () => SFConfig.Instance.DyePlants },
-                { TileID.LifeFruit, () => SFConfig.Instance.LifeFruit },
-                { TileID.Sapphire, () => SFConfig.Instance.Sapphire },
-                { TileID.Ruby, () => SFConfig.Instance.Ruby },
-                { TileID.Emerald, () => SFConfig.Instance.Emerald },
-                { TileID.Topaz, () => SFConfig.Instance.Topaz },
-                { TileID.Amethyst, () => SFConfig.Instance.Amethyst },
-                { TileID.Diamond, () => SFConfig.Instance.Diamond },
-                { TileID.MatureHerbs, () => SFConfig.Instance.MatureHerbs },
-                { TileID.BloomingHerbs, () => SFConfig.Instance.BloomingHerbs },
-                { TileID.Statues, () => SFConfig.Instance.Statues },
-                { TileID.ExposedGems, () => SFConfig.Instance.ExposedGems },
-                { TileID.Painting3X3, () => SFConfig.Instance.Painting3X3 },
-                { TileID.Painting6X4, () => SFConfig.Instance.Painting6X4 },
-                { TileID.Painting2X3, () => SFConfig.Instance.Painting2X3 },
-                { TileID.Painting3X2, () => SFConfig.Instance.Painting3X2 },
-                { TileID.AlphabetStatues, () => SFConfig.Instance.AlphabetStatues },
-                { TileID.MushroomStatue, () => SFConfig.Instance.MushroomStatue },
-                { TileID.CatBast, () => SFConfig.Instance.CatBast },
-                { TileID.BoulderStatue, () => SFConfig.Instance.BoulderStatue },
-                { TileID.AmberStoneBlock, () => SFConfig.Instance.AmberStoneBlock },
+                { TileID.Pots, config => config.Pots },
+                { TileID.DesertFossil, config => config.DesertFossil },
+                { TileID.FossilOre, config => config.FossilOre },
+                { TileID.Copper, config => config.Copper },
+                { TileID.Tin, config => config.Tin },
+                { TileID.Iron, config => config.Iron },
+                { TileID.Lead, config => config.Lead },
+                { TileID.Silver, config => config.Silver },
+                { TileID.Tungsten, config => config.Tungsten },
+                { TileID.Gold, config => config.Gold },
+                { TileID.Platinum, config => config.Platinum },
+                { TileID.Meteorite, config => config.Meteorite },
+                { TileID.Containers, config => config.Containers },
+                { TileID.FakeContainers, config => config.FakeContainers },
+                { TileID.Containers2, config => config.Containers2 },
+                { TileID.FakeContainers2, config => config.FakeContainers2 },
+                { TileID.Heart, config => config.Heart },
+                { TileID.ManaCrystal, config => config.ManaCrystal },
+                { TileID.Cobalt, config => config.Cobalt },
+                { TileID.Palladium, config => config.Palladium },
+                { TileID.Mythril, config => config.Mythril },
+                { TileID.Orichalcum, config => config.Orichalcum },
+                { TileID.Adamantite, config => config.Adamantite },
+                { TileID.Titanium, config => config.Titanium },
+                { TileID.Chlorophyte, config => config.Chlorophyte },
+                { TileID.DyePlants, config => config.DyePlants },
+                { TileID.LifeFruit, config => config.LifeFruit },
+                { TileID.Sapphire, config => config.Sapphire },
+                { TileID.Ruby, config => config.Ruby },
+                { TileID.Emerald, config => config.Emerald },
+                { TileID.Topaz, config => config.Topaz },
+                { TileID.Amethyst, config => config.Amethyst },
+                { TileID.Diamond, config => config.Diamond },
+                { TileID.MatureHerbs, config => config.MatureHerbs },
+                { TileID.BloomingHerbs, config => config.BloomingHerbs },
+                { TileID.Statues, config => config.Statues },
+                { TileID.ExposedGems, config => config.ExposedGems },
+                { TileID.Painting3X3, config => config.Painting3X3 },
+                { TileID.Painting6X4, config => config.Painting6X4 },
+                { TileID.Painting2X3, config => config.Painting2X3 },
+                { TileID.Painting3X2, config => config.Painting3X2 },
+                { TileID.AlphabetStatues, config => config.AlphabetStatues },
+                { TileID.MushroomStatue, config => config.MushroomStatue },
+                { TileID.CatBast, config => config.CatBast },
+                { TileID.BoulderStatue, config => config.BoulderStatue },
+                { TileID.AmberStoneBlock, config => config.AmberStoneBlock },
             };
         }
 
@@ -169,7 +169,7 @@ namespace SpelunkerFilter
             {
                 string name = TileID.Search.GetName(type);
                 configOutput += $"[DefaultValue(true)]\n[TooltipKey(\"$\" + SpelunkerFilter.presetFilterTooltipKey)]\npublic bool {name} " + "{ get; set; }\n\n";
-                dictDefinition += "{ " + $"TileID.{name}, () => SFConfig.Instance.{name}" + " },\n";
+                dictDefinition += "{ " + $"TileID.{name}, config => config.{name}" + " },\n";
             }
 
             Logger.Info(configOutput);

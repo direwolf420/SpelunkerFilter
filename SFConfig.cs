@@ -15,11 +15,16 @@ namespace SpelunkerFilter
 		Blacklist
 	}
 
-	public partial class SFConfig
+	public class SFConfig : SFConfigBase
 	{
 		public override ConfigScope Mode => ConfigScope.ClientSide;
 
 		public static SFConfig Instance => ModContent.GetInstance<SFConfig>();
+	}
+
+	public abstract partial class SFConfigBase
+	{
+		public override ConfigScope Mode => ConfigScope.ClientSide;
 
 		[DefaultValue(true)]
 		public bool ApplyToMetalDetector { get; set; }

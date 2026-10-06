@@ -15,7 +15,8 @@ namespace SpelunkerFilter
 		{
 			bool ret = orig(t);
 
-			if (!SFConfig.Instance.ApplyToMetalDetector || (NotFiltered(t, t.TileType) ?? true))
+			//TODO change config instance to metal one
+			if (!SFConfig.Instance.ApplyToMetalDetector || (NotFiltered(SFConfig.Instance, t, t.TileType) ?? true))
 			{
 				return ret;
 			}
@@ -25,29 +26,29 @@ namespace SpelunkerFilter
 
 		public override bool? IsTileSpelunkable(int i, int j, int type)
 		{
-			return NotFiltered(Main.tile[i, j], type);
+			return NotFiltered(SFConfig.Instance, Main.tile[i, j], type);
 		}
 
-		private static bool? NotFiltered(Tile t, int type)
+		private static bool? NotFiltered(SFConfigBase config, Tile t, int type)
 		{
 			var def = new TileDefinition(type);
 
 			if (SpelunkerFilter.specialFilters.TryGetValue(type, out var filter))
 			{
-				return filter(t);
+				return filter(config, t);
 			}
 
-			if (SFConfig.Instance.CustomWhitelist.Contains(def))
+			if (config.CustomWhitelist.Contains(def))
 			{
 				return true;
 			}
 
-			if (SFConfig.Instance.CustomBlacklist.Contains(def))
+			if (config.CustomBlacklist.Contains(def))
 			{
 				return false;
 			}
 
-			if (SpelunkerFilter.tileToDefaultFilterToggle.TryGetValue(type, out var toggle) && !toggle())
+			if (SpelunkerFilter.tileToDefaultFilterToggle.TryGetValue(type, out var toggle) && !toggle(config))
 			{
 				return false;
 			}

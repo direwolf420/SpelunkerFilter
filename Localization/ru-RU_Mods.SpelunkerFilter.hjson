@@ -1,6 +1,7 @@
 Configs: {
-	SFConfig: {
-		DisplayName: Конфигурация
+	SFConfig.DisplayName: Конфигурация
+
+	SFConfigBase: {
 		DefaultFilterTooltip: Выключите, чтобы {$ItemName.SpelunkerPotion} не подсвечивало это
 		SpecialFilterTooltip: Выберите, как {$ItemName.SpelunkerPotion} будет на это влиять
 

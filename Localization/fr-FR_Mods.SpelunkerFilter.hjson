@@ -1,6 +1,7 @@
 Configs: {
-	SFConfig: {
-		DisplayName: Configuration
+	SFConfig.DisplayName: Configuration
+
+	SFConfigBase: {
 		DefaultFilterTooltip: Désactiver ceci pour empêcher la {$ItemName.SpelunkerPotion} de mettre ce bloc en surbrillance
 		SpecialFilterTooltip: Sélectionner une option pour changer comment la {$ItemName.SpelunkerPotion} l'affectera
 
