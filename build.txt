@@ -1,4 +1,4 @@
 displayName = Spelunker & Metal Detector Filter
 author = direwolf420
 side = Client
-version = 0.3
+version = 0.4

@@ -1,5 +1,4 @@
 v{ModVersion} has been published to {tMLBuildPurpose} tML v{tMLVersion}
 
-* Renamed the mod from "Spelunker Filter" to "Spelunker & Metal Detector Filter" and updated icons
-* Added small mod icon for the configuration menu
-* Added Gelatin Crystal filter
+* Renamed the default Config to Spelunker Config, and added a new Metal Detector Config.
+* 'Applies to Metal Detector' option now overwrites the Metal Detector Config.

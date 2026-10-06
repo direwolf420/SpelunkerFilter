@@ -5,9 +5,9 @@ You can't find the marble and granite biomes?
 You are tired of Life Fruit and Life Crystal blocking more desired treasures with the Metal Detector?
 With this clientside mod, you can![/i]
 
-Using the [b]config[/b], you can manually specify the tiles and their behavior. There is also a preset containing all vanilla tiles for convenience.
+Using the [b]configs[/b], you can manually specify the tiles and their behavior. There is also a preset containing all vanilla tiles for convenience.
 
-As a bonus, the same filter will apply to the [b]Metal Detector[/b]. You can turn it off in the config.
+As a bonus, the same filter will apply to the [b]Metal Detector[/b]. You can turn it off in the config, and have the second Metal Detector Config apply separately instead.
 
 Some tiles cannot be properly configured as they are concidered a sub-tile. For example, you can only toggle all or no chests, but not specifically a Gold Chest. If there is demand, I can add support for certain vanilla tiles like Chests.
 
@@ -19,6 +19,6 @@ Credit to Harblesnargits for icon.
 [b]Localization:[/b]
 If you want to add support for different languages, you are welcome to contribute localizations here: [b][url=https://github.com/direwolf420/SpelunkerFilter]GitHub[/url][/b]
 List of localization contributors:
-* Russian: [b]jupiter.ryo[/b]
+* Russian: [b]jupiter.ryo, GodHybrid[/b]
 * French: [b]Brutaliaa[/b]
 * German: [b]Lighty[/b]
