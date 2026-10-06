@@ -1,50 +1,65 @@
 Configs: {
-	SFConfig.DisplayName: Конфигурация
+	SFConfig: {
+		DisplayName: Настройки спелеолога
+
+		ApplyToMetalDetector: {
+			Label: Применять к металлодетектору?
+			Tooltip:
+				'''
+				Применять фильтр и для {$ItemName.MetalDetector}
+				Отключите, чтобы использовать отдельные настройки фильтра на следующей странице
+				'''
+		}
+
+		RemoveSparklingDust: {
+			Label: Убрать сверкающие частицы?
+			Tooltip: Если включено, убирает сверкающие частицы, которые появляются на подсвеченных блоках. Может увеличить производительность
+		}
+	}
+
+	SFConfigMD: {
+		DisplayName: Настройка металлодетектора
+
+		OverriddenBySFConfig: {
+			Label: "[c/ff0000:Используются {$Configs.SFConfig.DisplayName}?]"
+			Tooltip: Означает, что функция "{$Configs.SFConfig.ApplyToMetalDetector.Label}" в "{$Configs.SFConfig.DisplayName}" включена и имеет приоритет
+		}
+	}
 
 	SFConfigBase: {
 		DefaultFilterTooltip: Выключите, чтобы {$ItemName.SpelunkerPotion} не подсвечивало это
 		SpecialFilterTooltip: Выберите, как {$ItemName.SpelunkerPotion} будет на это влиять
 
 		Headers: {
-			CustomFilter: Собственный фильтр
-			PresetFilterGroupToggles: Переключатели групп предустановленных фильтров для ванильных блоков
+			CustomFilter: Личный фильтр
+			PresetFilterGroupToggles: Переключатели предустановленных фильтров для групп ванильных блоков
 			PresetFilter: Предустановленный фильтр для ванильных блоков
 			SpecialFilter: Особый фильтр
 		}
 
-		ApplyToMetalDetector: {
-			Label: Применять к металлодетектору
-			Tooltip: Если включено, применяет те же настройки фильтра для {$ItemName.MetalDetector}
-		}
-
-		RemoveSparklingDust: {
-			Label: Убрать сверкающие частицы
-			Tooltip: Если включено, убирает сверкающие частицы, которые появляются на подсвеченных блоках. Может увеличить производительность
-		}
-
 		CustomWhitelist: {
-			Label: Собственный белый список
-			Tooltip: Блоки в этом списке БУДУТ подсвечены. Имеет приоритет над "{$Configs.SFConfig.Headers.PresetFilter}" и "{$Configs.SFConfig.CustomBlacklist.Label}"
+			Label: Личный белый список
+			Tooltip: Блоки в этом списке БУДУТ подсвечены. Имеет приоритет над "{$Configs.SFConfigBase.Headers.PresetFilter}" и "{$Configs.SFConfigBase.CustomBlacklist.Label}"
 		}
 
 		CustomBlacklist: {
-			Label: Собственный чёрный список
-			Tooltip: Блоки в этом списке НЕ БУДУТ подсвечены. Имеет приоритет над "{$Configs.SFConfig.Headers.PresetFilter}"
+			Label: Личный чёрный список
+			Tooltip: Блоки в этом списке НЕ БУДУТ подсвечены. Имеет приоритет над "{$Configs.SFConfigBase.Headers.PresetFilter}"
 		}
 
 		ToggleGems: {
-			Label: Переключить драгоценные камни
-			Tooltip: Переключает все драгоценные камни
+			Label: Вкл./Откл. драгоценные камни
+			Tooltip: Включает или отключает отображение драгоценных камней
 		}
 
 		TogglePreHMMetalOres: {
-			Label: Переключить руды до Хардмода
-			Tooltip: Переключает все руды до Хардмода
+			Label: Вкл./Откл. руды до Хардмода
+			Tooltip: Включает или отключает отображение всех руд до Хардмода
 		}
 
 		ToggleHMMetalOres: {
-			Label: Переключить руды Хардмода
-			Tooltip: Переключает все руды Хардмода
+			Label: Вкл./Откл. руды Хардмода
+			Tooltip: Включает или отключает отображение всех руд Хардмода
 		}
 
 		Pots.Label: Горшки

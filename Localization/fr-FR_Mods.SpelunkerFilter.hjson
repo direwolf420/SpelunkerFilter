@@ -1,5 +1,30 @@
 Configs: {
-	SFConfig.DisplayName: Configuration
+	SFConfig: {
+		DisplayName: Configuration du Spéléologue
+
+		ApplyToMetalDetector: {
+			Label: Appliquer au {$ItemName.MetalDetector}
+			Tooltip:
+				'''
+				Si activé, applique le même effet au {$ItemName.MetalDetector}
+				Si désactivé, la {$SFConfigMD.DisplayName} individuelle sur la page suivante s'appliquera
+				'''
+		}
+
+		RemoveSparklingDust: {
+			Label: Retirer les Particules Scintillantes
+			Tooltip: Si activé, retire les particules scintillantes qui apparaissent sur les blocs en surbrillance. Peut améliorer les performances.
+		}
+	}
+
+	SFConfigMD: {
+		DisplayName: Configuration du Détecteur de Métaux
+
+		OverriddenBySFConfig: {
+			Label: "[c/ff0000:Remplacé par: {$Configs.SFConfig.DisplayName}]"
+			Tooltip: Si activé, indique que le paramètre "{$Configs.SFConfig.ApplyToMetalDetector.Label}" de "{$Configs.SFConfig.DisplayName}" remplace cette configuration
+		}
+	}
 
 	SFConfigBase: {
 		DefaultFilterTooltip: Désactiver ceci pour empêcher la {$ItemName.SpelunkerPotion} de mettre ce bloc en surbrillance
@@ -12,24 +37,14 @@ Configs: {
 			SpecialFilter: Filtre Spécial
 		}
 
-		ApplyToMetalDetector: {
-			Label: Appliquer au {$ItemName.MetalDetector}
-			Tooltip: Si activé, applique le même effet au {$ItemName.MetalDetector}
-		}
-
-		RemoveSparklingDust: {
-			Label: Retire l'effet de Scintillement
-			Tooltip: Si activé, retire les particules scintillantes qui apparaissent sur les blocs en surbrillance. Peut améliorer les performances.
-		}
-
 		CustomWhitelist: {
 			Label: Liste blanche Personnalisée
-			Tooltip: Les blocs dans cette liste SERONT mis en surbrillance. Priorité au-dessus de "{$Configs.SFConfig.Headers.PresetFilter}" et "{$Configs.SFConfig.CustomBlacklist.Label}"
+			Tooltip: Les blocs dans cette liste SERONT mis en surbrillance. Priorité au-dessus de "{$Configs.SFConfigBase.Headers.PresetFilter}" et "{$Configs.SFConfigBase.CustomBlacklist.Label}"
 		}
 
 		CustomBlacklist: {
 			Label: Liste noire Personnalisée
-			Tooltip: Les blocs dans cette liste ne SERONT pas en surbrillance. Priorité sur "{$Configs.SFConfig.Headers.PresetFilter}"
+			Tooltip: Les blocs dans cette liste ne SERONT pas en surbrillance. Priorité sur "{$Configs.SFConfigBase.Headers.PresetFilter}"
 		}
 
 		ToggleGems: {

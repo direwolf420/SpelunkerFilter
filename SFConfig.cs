@@ -20,11 +20,6 @@ namespace SpelunkerFilter
 		public override ConfigScope Mode => ConfigScope.ClientSide;
 
 		public static SFConfig Instance => ModContent.GetInstance<SFConfig>();
-	}
-
-	public abstract partial class SFConfigBase
-	{
-		public override ConfigScope Mode => ConfigScope.ClientSide;
 
 		[DefaultValue(true)]
 		public bool ApplyToMetalDetector { get; set; }
@@ -32,6 +27,22 @@ namespace SpelunkerFilter
 		[ReloadRequired]
 		[DefaultValue(false)]
 		public bool RemoveSparklingDust { get; set; }
+	}
+
+	public class SFConfigMD : SFConfigBase
+	{
+		public override ConfigScope Mode => ConfigScope.ClientSide;
+
+		public static SFConfigMD Instance => ModContent.GetInstance<SFConfigMD>();
+
+		[JsonIgnore]
+		[ShowDespiteJsonIgnore]
+		public bool OverriddenBySFConfig => SFConfig.Instance.ApplyToMetalDetector;
+	}
+
+	public abstract partial class SFConfigBase
+	{
+		public override ConfigScope Mode => ConfigScope.ClientSide;
 
 		[Header("CustomFilter")]
 		[BackgroundColor(220, 220, 220)]

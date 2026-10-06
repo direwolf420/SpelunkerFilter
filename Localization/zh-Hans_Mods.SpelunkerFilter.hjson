@@ -1,5 +1,30 @@
 Configs: {
-	// SFConfig.DisplayName: Config
+	SFConfig: {
+		// DisplayName: Spelunker Config
+
+		ApplyToMetalDetector: {
+			// Label: Apply To {$ItemName.MetalDetector}
+			/* Tooltip:
+				'''
+				If enabled, applies the same filter settings to the {$ItemName.MetalDetector}
+				If disabled, the individual {$SFConfigMD.DisplayName} on the next page will apply
+				''' */
+		}
+
+		RemoveSparklingDust: {
+			// Label: Remove Sparkling Dust
+			// Tooltip: If enabled, removes the sparkling dust particles that appear over highlighted tiles. May improve performance
+		}
+	}
+
+	SFConfigMD: {
+		// DisplayName: Metal Detector Config
+
+		OverriddenBySFConfig: {
+			// Label: "[c/ff0000:Overridden by: {$Configs.SFConfig.DisplayName}]"
+			// Tooltip: If enabled, it indicates that the "{$Configs.SFConfig.ApplyToMetalDetector.Label}" setting in the "{$Configs.SFConfig.DisplayName}" overrides this config
+		}
+	}
 
 	SFConfigBase: {
 		// DefaultFilterTooltip: Disable this to prevent the {$ItemName.SpelunkerPotion} from highlighting it
@@ -12,24 +37,14 @@ Configs: {
 			// SpecialFilter: Special Filter
 		}
 
-		ApplyToMetalDetector: {
-			// Label: Apply To {$ItemName.MetalDetector}
-			// Tooltip: If enabled, applies the same filter settings to the {$ItemName.MetalDetector}
-		}
-
-		RemoveSparklingDust: {
-			// Label: Remove Sparkling Dust
-			// Tooltip: If enabled, removes the sparkling dust particles that appear over highlighted tiles. May improve performance
-		}
-
 		CustomWhitelist: {
 			// Label: Custom Whitelist
-			// Tooltip: Tiles in this list WILL be highlighted. Takes precedence over "{$Configs.SFConfig.Headers.PresetFilter}" and "{$Configs.SFConfig.CustomBlacklist.Label}"
+			// Tooltip: Tiles in this list WILL be highlighted. Takes precedence over "{$Configs.SFConfigBase.Headers.PresetFilter}" and "{$Configs.SFConfigBase.CustomBlacklist.Label}"
 		}
 
 		CustomBlacklist: {
 			// Label: Custom Blacklist
-			// Tooltip: Tiles in this list WILL NOT be highlighted. Takes precedence over "{$Configs.SFConfig.Headers.PresetFilter}"
+			// Tooltip: Tiles in this list WILL NOT be highlighted. Takes precedence over "{$Configs.SFConfigBase.Headers.PresetFilter}"
 		}
 
 		ToggleGems: {

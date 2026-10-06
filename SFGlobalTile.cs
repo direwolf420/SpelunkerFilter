@@ -15,8 +15,7 @@ namespace SpelunkerFilter
 		{
 			bool ret = orig(t);
 
-			//TODO change config instance to metal one
-			if (!SFConfig.Instance.ApplyToMetalDetector || (NotFiltered(SFConfig.Instance, t, t.TileType) ?? true))
+			if (NotFiltered(SFConfig.Instance.ApplyToMetalDetector ? SFConfig.Instance : SFConfigMD.Instance, t, t.TileType) ?? true)
 			{
 				return ret;
 			}
