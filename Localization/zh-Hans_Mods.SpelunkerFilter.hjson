@@ -13,7 +13,7 @@ Configs: {
 
 		RemoveSparklingDust: {
 			Label: 移除闪光粉尘
-			Tooltip: 若启用，将移除高亮方块上方出现的闪光粉尘粒子。可能提升性能
+			Tooltip: 若启用，将移除高亮物块上方出现的闪光粉尘粒子。可能提升性能
 		}
 	}
 
@@ -32,19 +32,19 @@ Configs: {
 
 		Headers: {
 			CustomFilter: 自定义过滤器
-			PresetFilterGroupToggles: 预设过滤器 - 原版方块分组开关
-			PresetFilter: 预设过滤器 - 原版方块
+			PresetFilterGroupToggles: 预设过滤器 - 原版物块分组开关
+			PresetFilter: 预设过滤器 - 原版物块
 			SpecialFilter: 特殊过滤器
 		}
 
 		CustomWhitelist: {
 			Label: 自定义白名单
-			Tooltip: 此列表中的方块会被高亮。优先于 {$Configs.SFConfigBase.Headers.PresetFilter} 和 {$Configs.SFConfigBase.CustomBlacklist.Label}
+			Tooltip: 此列表中的物块会被高亮。优先于 {$Configs.SFConfigBase.Headers.PresetFilter} 和 {$Configs.SFConfigBase.CustomBlacklist.Label}
 		}
 
 		CustomBlacklist: {
 			Label: 自定义黑名单
-			Tooltip: 此列表中的方块不会被高亮。优先于 {$Configs.SFConfigBase.Headers.PresetFilter}
+			Tooltip: 此列表中的物块不会被高亮。优先于 {$Configs.SFConfigBase.Headers.PresetFilter}
 		}
 
 		ToggleGems: {
