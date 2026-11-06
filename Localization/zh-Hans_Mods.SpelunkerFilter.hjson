@@ -77,7 +77,7 @@ Configs: {
 		Containers.Label: 容器
 		FakeContainers.Label: 装饰/陷阱容器
 		Containers2.Label: 容器 2
-		FakeContainers2.Label: 装饰/陷阱容器2
+		FakeContainers2.Label: 装饰/陷阱容器 2
 		Heart.Label: 生命水晶
 		ManaCrystal.Label: 魔力水晶
 		Cobalt.Label: 钴矿
