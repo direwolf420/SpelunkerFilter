@@ -74,10 +74,10 @@ Configs: {
 		Gold.Label: 金矿
 		Platinum.Label: 铂金矿
 		Meteorite.Label: 陨石
-		Containers.Label: 容器
-		FakeContainers.Label: 装饰/陷阱容器
-		Containers2.Label: 容器 2
-		FakeContainers2.Label: 装饰/陷阱容器 2
+		Containers.Label: 箱子
+		FakeContainers.Label: 陷阱箱
+		Containers2.Label: 箱子 2
+		FakeContainers2.Label: 陷阱箱 2
 		Heart.Label: 生命水晶
 		ManaCrystal.Label: 魔力水晶
 		Cobalt.Label: 钴矿
