@@ -12,8 +12,8 @@ Configs: {
 		}
 
 		RemoveSparklingDust: {
-			Label: 移除闪光粉尘
-			Tooltip: 若启用，将移除高亮物块上方出现的闪光粉尘粒子。可能提升性能
+			Label: 移除闪光效果
+			Tooltip: 若启用，将移除高亮物块上方出现的闪光粒子效果。可能提升性能
 		}
 	}
 
