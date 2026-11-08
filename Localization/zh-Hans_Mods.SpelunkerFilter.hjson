@@ -44,7 +44,7 @@ Configs: {
 
 		CustomBlacklist: {
 			Label: 自定义黑名单
-			Tooltip: 此列表中的物块不会被高亮。优先于 {$Configs.SFConfigBase.Headers.PresetFilter}
+			Tooltip: 此列表中的物块不会被高亮。高于“{$Configs.SFConfigBase.Headers.PresetFilter}”
 		}
 
 		ToggleGems: {
