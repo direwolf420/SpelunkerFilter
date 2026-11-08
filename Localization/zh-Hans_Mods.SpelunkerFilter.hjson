@@ -48,8 +48,8 @@ Configs: {
 		}
 
 		ToggleGems: {
-			Label: 切换全部宝石
-			Tooltip: 切换所有宝石
+			Label: 宝石
+			Tooltip: 是否高亮所有宝石
 		}
 
 		TogglePreHMMetalOres: {
