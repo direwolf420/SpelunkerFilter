@@ -1,132 +1,132 @@
 Configs: {
 	SFConfig: {
-		// DisplayName: Spelunker Config
+		DisplayName: 洞穴探险配置
 
 		ApplyToMetalDetector: {
-			// Label: Apply To {$ItemName.MetalDetector}
-			/* Tooltip:
+			Label: 应用于{$ItemName.MetalDetector}
+			Tooltip:
 				'''
-				If enabled, applies the same filter settings to the {$ItemName.MetalDetector}
-				If disabled, the individual {$SFConfigMD.DisplayName} on the next page will apply
-				''' */
+				若启用，{$ItemName.MetalDetector}将用此页的筛选规则
+				若禁用，则改用下一页中独立的{$SFConfigMD.DisplayName}
+				'''
 		}
 
 		RemoveSparklingDust: {
-			// Label: Remove Sparkling Dust
-			// Tooltip: If enabled, removes the sparkling dust particles that appear over highlighted tiles. May improve performance
+			Label: 移除闪光效果
+			Tooltip: 若启用，将移除高亮物块上方出现的闪光粒子效果。可能提升性能
 		}
 	}
 
 	SFConfigMD: {
-		// DisplayName: Metal Detector Config
+		DisplayName: 金属探测器配置
 
 		OverriddenBySFConfig: {
-			// Label: "[c/ff0000:Overridden by: {$Configs.SFConfig.DisplayName}]"
-			// Tooltip: If enabled, it indicates that the "{$Configs.SFConfig.ApplyToMetalDetector.Label}" setting in the "{$Configs.SFConfig.DisplayName}" overrides this config
+			Label: "[c/ff0000:被“{$Configs.SFConfig.DisplayName}”覆盖]"
+			Tooltip: 若启用，表示“{$Configs.SFConfig.DisplayName}”中的“{$Configs.SFConfig.ApplyToMetalDetector.Label}”会覆盖此配置
 		}
 	}
 
 	SFConfigBase: {
-		// DefaultFilterTooltip: Disable this to prevent the {$ItemName.SpelunkerPotion} from highlighting it
-		// SpecialFilterTooltip: Select an option to change how {$ItemName.SpelunkerPotion} will affect it
+		DefaultFilterTooltip: 关闭此项可防止{$ItemName.SpelunkerPotion}将其高亮
+		SpecialFilterTooltip: 选择一个选项，以更改{$ItemName.SpelunkerPotion}对它的影响方式
 
 		Headers: {
-			// CustomFilter: Custom Filter
-			// PresetFilterGroupToggles: Preset Filter - Group Toggles for Vanilla Tiles
-			// PresetFilter: Preset Filter - Vanilla Tiles
-			// SpecialFilter: Special Filter
+			CustomFilter: 自定义
+			PresetFilterGroupToggles: 预设 - 原版物块组
+			PresetFilter: 预设 - 原版物块
+			SpecialFilter: 特例
 		}
 
 		CustomWhitelist: {
-			// Label: Custom Whitelist
-			// Tooltip: Tiles in this list WILL be highlighted. Takes precedence over "{$Configs.SFConfigBase.Headers.PresetFilter}" and "{$Configs.SFConfigBase.CustomBlacklist.Label}"
+			Label: 自定义白名单
+			Tooltip: 此列表中的物块会被高亮。优先于 {$Configs.SFConfigBase.Headers.PresetFilter} 和 {$Configs.SFConfigBase.CustomBlacklist.Label}
 		}
 
 		CustomBlacklist: {
-			// Label: Custom Blacklist
-			// Tooltip: Tiles in this list WILL NOT be highlighted. Takes precedence over "{$Configs.SFConfigBase.Headers.PresetFilter}"
+			Label: 自定义黑名单
+			Tooltip: 此列表中的物块不会被高亮。高于“{$Configs.SFConfigBase.Headers.PresetFilter}”
 		}
 
 		ToggleGems: {
-			// Label: Toggle Gems
-			// Tooltip: Toggles all gems
+			Label: 宝石
+			Tooltip: 是否高亮所有宝石
 		}
 
 		TogglePreHMMetalOres: {
-			// Label: Toggle Pre-HM Ores
-			// Tooltip: Toggles all pre-hardmode metal ores
+			Label: 困难模式前的矿石
+			Tooltip: 是否高亮所有困难模式前的金属矿石
 		}
 
 		ToggleHMMetalOres: {
-			// Label: Toggle HM Ores
-			// Tooltip: Toggles all hardmode metal ores
+			Label: 困难模式的矿石
+			Tooltip: 是否高亮所有困难模式的金属矿石
 		}
 
-		// Pots.Label: Pots
-		// DesertFossil.Label: Desert Fossil
-		// FossilOre.Label: Sturdy Fossil
-		// Copper.Label: Copper Ore
-		// Tin.Label: Tin Ore
-		// Iron.Label: Iron Ore
-		// Lead.Label: Lead Ore
-		// Silver.Label: Silver Ore
-		// Tungsten.Label: Tungsten Ore
-		// Gold.Label: Gold Ore
-		// Platinum.Label: Platinum Ore
-		// Meteorite.Label: Meteorite Ore
-		// Containers.Label: Containers
-		// FakeContainers.Label: Fake Containers
-		// Containers2.Label: Containers 2
-		// FakeContainers2.Label: Fake Containers 2
-		// Heart.Label: Life Crystal
-		// ManaCrystal.Label: Mana Crystal
-		// Cobalt.Label: Cobalt Ore
-		// Palladium.Label: Palladium Ore
-		// Mythril.Label: Mythril Ore
-		// Orichalcum.Label: Orichalcum Ore
-		// Adamantite.Label: Adamantite Ore
-		// Titanium.Label: Titanium Ore
-		// Chlorophyte.Label: Chlorophyte Ore
-		// DyePlants.Label: Dye Plants
-		// LifeFruit.Label: Life Fruit
-		// Sapphire.Label: Sapphire
-		// Ruby.Label: Ruby
-		// Emerald.Label: Emerald
-		// Topaz.Label: Topaz
-		// Amethyst.Label: Amethyst
-		// Diamond.Label: Diamond
-		// MatureHerbs.Label: Mature Herbs
-		// BloomingHerbs.Label: Blooming Herbs
-		// Statues.Label: Statues
-		// ExposedGems.Label: Exposed Gems
-		// Painting3X3.Label: Paintings (3x3)
-		// Painting6X4.Label: Paintings (6x4)
-		// Painting2X3.Label: Paintings (2x3)
-		// Painting3X2.Label: Paintings (3x2)
-		// AlphabetStatues.Label: Alphabet Statues
-		// MushroomStatue.Label: Mushroom Statue
-		// CatBast.Label: Bast Statue
-		// BoulderStatue.Label: Boulder Statue
-		// AmberStoneBlock.Label: Amber
-		// GelatinCrystal.Label: Gelatin Crystal
+		Pots.Label: 罐子
+		DesertFossil.Label: 沙漠化石
+		FossilOre.Label: 坚固化石
+		Copper.Label: 铜矿
+		Tin.Label: 锡矿
+		Iron.Label: 铁矿
+		Lead.Label: 铅矿
+		Silver.Label: 银矿
+		Tungsten.Label: 钨矿
+		Gold.Label: 金矿
+		Platinum.Label: 铂金矿
+		Meteorite.Label: 陨石
+		Containers.Label: 箱子
+		FakeContainers.Label: 陷阱箱
+		Containers2.Label: 箱子 2
+		FakeContainers2.Label: 陷阱箱 2
+		Heart.Label: 生命水晶
+		ManaCrystal.Label: 魔力水晶
+		Cobalt.Label: 钴矿
+		Palladium.Label: 钯金矿
+		Mythril.Label: 秘银矿
+		Orichalcum.Label: 山铜矿
+		Adamantite.Label: 精金矿
+		Titanium.Label: 钛金矿
+		Chlorophyte.Label: 叶绿矿
+		DyePlants.Label: 染料植物
+		LifeFruit.Label: 生命果
+		Sapphire.Label: 蓝玉
+		Ruby.Label: 红玉
+		Emerald.Label: 翡翠
+		Topaz.Label: 黄玉
+		Amethyst.Label: 紫晶
+		Diamond.Label: 钻石
+		MatureHerbs.Label: 成熟草药
+		BloomingHerbs.Label: 开花草药
+		Statues.Label: 雕像
+		ExposedGems.Label: 裸露宝石
+		Painting3X3.Label: 绘画作品（3x3）
+		Painting6X4.Label: 绘画作品（6x4）
+		Painting2X3.Label: 绘画作品（2x3）
+		Painting3X2.Label: 绘画作品（3x2）
+		AlphabetStatues.Label: 字母雕像
+		MushroomStatue.Label: 蘑菇雕像
+		CatBast.Label: 巴斯特雕像
+		BoulderStatue.Label: 巨石雕像
+		AmberStoneBlock.Label: 琥珀
+		GelatinCrystal.Label: 明胶水晶
 	}
 
 	ToggleOverride: {
-		// Tooltip: ""
+		Tooltip: ""
 
 		Default: {
-			// Label: Default
-			// Tooltip: ""
+			Label: 默认
+			Tooltip: ""
 		}
 
 		Whitelist: {
-			// Label: Whitelist
-			// Tooltip: ""
+			Label: 白名单
+			Tooltip: ""
 		}
 
 		Blacklist: {
-			// Label: Blacklist
-			// Tooltip: ""
+			Label: 黑名单
+			Tooltip: ""
 		}
 	}
 }
