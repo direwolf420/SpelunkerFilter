@@ -58,8 +58,8 @@ Configs: {
 		}
 
 		ToggleHMMetalOres: {
-			Label: 切换困难模式矿石
-			Tooltip: 切换所有困难模式的金属矿石
+			Label: 困难模式的矿石
+			Tooltip: 是否高亮所有困难模式的金属矿石
 		}
 
 		Pots.Label: 罐子
