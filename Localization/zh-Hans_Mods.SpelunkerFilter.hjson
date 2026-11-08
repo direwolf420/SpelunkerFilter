@@ -53,8 +53,8 @@ Configs: {
 		}
 
 		TogglePreHMMetalOres: {
-			Label: 切换困难模式前矿石
-			Tooltip: 切换所有困难模式前的金属矿石
+			Label: 困难模式前的矿石
+			Tooltip: 是否高亮所有困难模式前的金属矿石
 		}
 
 		ToggleHMMetalOres: {
