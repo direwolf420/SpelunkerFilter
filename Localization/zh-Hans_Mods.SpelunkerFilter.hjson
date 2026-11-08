@@ -31,10 +31,10 @@ Configs: {
 		SpecialFilterTooltip: 选择一个选项，以更改{$ItemName.SpelunkerPotion}对它的影响方式
 
 		Headers: {
-			CustomFilter: 自定义过滤器
-			PresetFilterGroupToggles: 预设过滤器 - 原版物块分组开关
-			PresetFilter: 预设过滤器 - 原版物块
-			SpecialFilter: 特殊过滤器
+			CustomFilter: 自定义
+			PresetFilterGroupToggles: 预设 - 原版物块组
+			PresetFilter: 预设 - 原版物块
+			SpecialFilter: 特例
 		}
 
 		CustomWhitelist: {
