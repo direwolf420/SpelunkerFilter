@@ -6,7 +6,7 @@ Configs: {
 			Label: 应用于{$ItemName.MetalDetector}
 			Tooltip:
 				'''
-				若启用，将对{$ItemName.MetalDetector}应用相同的过滤设置
+				若启用，{$ItemName.MetalDetector}将用此页的筛选规则
 				若禁用，则改用下一页中独立的{$SFConfigMD.DisplayName}
 				'''
 		}
