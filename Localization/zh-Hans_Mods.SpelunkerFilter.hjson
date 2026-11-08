@@ -21,8 +21,8 @@ Configs: {
 		DisplayName: 金属探测器配置
 
 		OverriddenBySFConfig: {
-			Label: "[c/ff0000:被 {$Configs.SFConfig.DisplayName} 覆盖]"
-			Tooltip: 若启用，表示 {$Configs.SFConfig.DisplayName} 中的 {$Configs.SFConfig.ApplyToMetalDetector.Label} 设置会覆盖此配置
+			Label: "[c/ff0000:被“{$Configs.SFConfig.DisplayName}”覆盖]"
+			Tooltip: 若启用，表示“{$Configs.SFConfig.DisplayName}”中的“{$Configs.SFConfig.ApplyToMetalDetector.Label}”会覆盖此配置
 		}
 	}
 
